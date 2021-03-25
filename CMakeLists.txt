@@ -29,3 +29,10 @@ add_executable(example_publisher
   src/publisher.cpp
 )
 target_link_libraries(example_publisher ${catkin_LIBRARIES})
+
+add_library(
+  example_sub_pub
+  src/subscriber_publisher.cpp
+)
+add_dependencies(example_sub_pub ${catkin_EXPORTED_TARGETS})
+target_link_libraries(example_sub_pub ${catkin_LIBRARIES})
