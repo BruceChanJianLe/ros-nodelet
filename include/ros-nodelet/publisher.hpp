@@ -9,10 +9,14 @@
 
 namespace nodelet_example
 {
-    class publisher : public nodelet::Nodelet
+    class publisher
     {
     private:
-        virtual void onInit() override;
+        ros::NodeHandle global_nh_;
+        ros::NodeHandle private_nh_;
+        ros::Publisher pub_;
+        std_msgs::Int64 msg_;
+
     public:
         publisher();
         ~publisher();
