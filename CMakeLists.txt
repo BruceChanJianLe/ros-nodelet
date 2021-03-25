@@ -38,3 +38,7 @@ add_library(
 )
 add_dependencies(example_sub_pub ${catkin_EXPORTED_TARGETS})
 target_link_libraries(example_sub_pub ${catkin_LIBRARIES})
+
+# Add exmaple_sub_pub nodelet executable
+add_executable(nodelet_sub_pub_node src/subscriber_publisher_node.cpp)
+target_link_libraries(nodelet_sub_pub_node ${catkin_LIBRARIES})
