@@ -24,12 +24,14 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+# example publisher
 add_executable(example_publisher
   src/publisher_node.cpp
   src/publisher.cpp
 )
 target_link_libraries(example_publisher ${catkin_LIBRARIES})
 
+# Add example_sub_pub lib
 add_library(
   example_sub_pub
   src/subscriber_publisher.cpp
