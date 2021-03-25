@@ -39,7 +39,7 @@ namespace nodelet_example
         // Publish what is recieve
         pub_.publish(msg_);
 
-        ROS_INFO_STREAM(
+        NODELET_INFO_STREAM(
             ros::this_node::getName() << " I have recieved counts: " << msg_.data
         );
     }
