@@ -32,5 +32,7 @@
 
 
   <export>
+    <nodelet plugin="${prefix}/nodelet_plugins.xml"/>
   </export>
+
 </package>
