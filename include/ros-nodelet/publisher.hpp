@@ -19,6 +19,8 @@ namespace nodelet_example
     public:
         publisher();
         ~publisher();
+
+        void start();
     };
 } // namespace nodelet_example
 
