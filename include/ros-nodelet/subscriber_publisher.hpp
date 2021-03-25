@@ -9,12 +9,12 @@
 
 namespace nodelet_example
 {
-    class subscriber_publisher : nodelet::Nodelet
+    class subscriber_publisher : public nodelet::Nodelet
     {
     private:
         virtual void onInit() override;
 
-        void CountCB(std_msgs::Int64::ConstPtr & msg);
+        void CountCB(const std_msgs::Int64::ConstPtr & msg);
 
         ros::NodeHandle global_nh_;
         ros::NodeHandle private_nh_;
