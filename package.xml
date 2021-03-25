@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ros-nodelet</name>
+  <version>0.0.0</version>
+  <description>The ros-nodelet package</description>
+
+  <author email="jianle001@e.ntu.edu.sg">Bruce Chan Jian Le</author>
+  <maintainer email="jianle001@e.ntu.edu.sg">Bruce Chan Jian Le</maintainer>
+  <license>MIT</license>
+  <url type="website">https://github.com/BruceChanJianLe/ros-nodelet</url>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>nodelet</build_depend>
+  <build_depend>nodelet_topic_tools</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <build_export_depend>dynamic_reconfigure</build_export_depend>
+  <build_export_depend>nodelet</build_export_depend>
+  <build_export_depend>nodelet_topic_tools</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+
+  <exec_depend>dynamic_reconfigure</exec_depend>
+  <exec_depend>nodelet</exec_depend>
+  <exec_depend>nodelet_topic_tools</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+
+  <export>
+  </export>
+</package>
