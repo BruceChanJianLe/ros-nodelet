@@ -29,6 +29,8 @@ namespace nodelet_example
             // Publish msg_
             pub_.publish(msg_);
 
+            ROS_INFO_STREAM(ros::this_node::getName() << " current count: " << msg_.data);
+
             // Increase data count
             ++msg_.data;
 
