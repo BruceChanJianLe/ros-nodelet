@@ -1,0 +1,7 @@
+<library path="lib/libexample_sub_pub">
+    <class name="ros-nodelet/subscriber_publisher" type="nodelet_example::subscriber_publisher" base_class_type="nodelet::Nodelet">
+        <description>
+            Demo nodelet example.
+        </description>
+    </class>
+</library>
