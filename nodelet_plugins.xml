@@ -4,4 +4,11 @@
             Demo nodelet example.
         </description>
     </class>
+
+    <class name="ros-nodelet/subscriber_publisher2" type="nodelet_example::subscriber_publisher2" base_class_type="nodelet::Nodelet">
+        <description>
+            Demo nodelet example2.
+        </description>
+    </class>
+
 </library>
