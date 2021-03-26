@@ -35,6 +35,7 @@ target_link_libraries(example_publisher ${catkin_LIBRARIES})
 add_library(
   example_sub_pub
   src/subscriber_publisher.cpp
+  src/subscriber_publisher2.cpp
 )
 add_dependencies(example_sub_pub ${catkin_EXPORTED_TARGETS})
 target_link_libraries(example_sub_pub ${catkin_LIBRARIES})
@@ -42,3 +43,15 @@ target_link_libraries(example_sub_pub ${catkin_LIBRARIES})
 # Add exmaple_sub_pub nodelet executable
 add_executable(nodelet_sub_pub_node src/subscriber_publisher_node.cpp)
 target_link_libraries(nodelet_sub_pub_node ${catkin_LIBRARIES})
+
+# # Add example_sub_pub2 lib
+# add_library(
+#   example_sub_pub2
+#   src/subscriber_publisher2.cpp
+# )
+# add_dependencies(example_sub_pub2 ${catkin_EXPORTED_TARGETS})
+# target_link_libraries(example_sub_pub2 ${catkin_LIBRARIES})
+
+# Add exmaple_sub_pub nodelet executable
+add_executable(nodelet_sub_pub_node2 src/subscriber_publisher_node.cpp)
+target_link_libraries(nodelet_sub_pub_node2 ${catkin_LIBRARIES})
