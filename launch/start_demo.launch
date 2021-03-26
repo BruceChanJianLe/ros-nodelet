@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+    <include file="$(find ros-nodelet)/launch/start_publisher.launch"/>
+    <include file="$(find ros-nodelet)/launch/start_subscriber_publisher_nodelet.launch"/>
+    <include file="$(find ros-nodelet)/launch/start_subscriber_publisher2_nodelet.launch"/>
+
+</launch>
