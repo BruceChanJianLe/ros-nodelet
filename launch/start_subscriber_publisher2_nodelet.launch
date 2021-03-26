@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+    <node pkg="nodelet"
+          type="nodelet"
+          name="demo_sub_pub_node2"
+          args="load ros-nodelet/subscriber_publisher2 nodelet_manager"
+          output="screen"
+    >
+    </node>
+
+</launch>
