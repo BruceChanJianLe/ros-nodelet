@@ -2,6 +2,15 @@
 
 This repository demonstrates the usage of ROS nodelet plugin API for your own package.
 
+## Listing Available Nodelets on System
+
+Following commands are helpful to list all nodelets available on your system found in ROS_PACKAGE_PATH. Note that it's NOT the list of currently running nodelet nor nodelet managers. Or list the nodelet xml files for [pluginlib](https://wiki.ros.org/pluginlib) by: 
+```bash
+rosrun nodelet declared_nodelets
+# or
+rospack plugins --attrib=plugin nodelet
+```
+
 ## References
 
 - Nodelet Explanation [link_blog](https://automaticaddison.com/working-with-ros-nodelets-in-ros-noetic/)
