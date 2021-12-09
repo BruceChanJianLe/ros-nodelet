@@ -16,7 +16,7 @@ namespace nodelet_example
 
         void CountCB(const std_msgs::Int64::ConstPtr & msg);
 
-        ros::NodeHandle gloabal_nh_;
+        ros::NodeHandle global_nh_;
         ros::NodeHandle private_nh_;
         ros::Subscriber sub_;
         ros::Publisher pub_;
