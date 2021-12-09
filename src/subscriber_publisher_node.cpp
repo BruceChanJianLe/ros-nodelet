@@ -27,8 +27,5 @@ int main(int argc, char ** argv)
     // Load nodelet
     nodelet.load(nodelet_name, NodeletName, remap, nargv);
 
-    // ROS Spin
-    ros::spin();
-
     return 0;
 }
