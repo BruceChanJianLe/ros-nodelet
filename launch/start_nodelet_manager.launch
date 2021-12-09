@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+    <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager" output="screen">
+    </node>
+
+</launch>
