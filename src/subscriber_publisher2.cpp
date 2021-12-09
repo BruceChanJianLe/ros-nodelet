@@ -17,10 +17,10 @@ namespace nodelet_example
     void subscriber_publisher2::onInit()
     {
         // Initialize nodelet
-        gloabal_nh_ = getNodeHandle();
+        global_nh_ = getNodeHandle();
         private_nh_ = getPrivateNodeHandle();
 
-        sub_ = gloabal_nh_.subscribe<std_msgs::Int64>(
+        sub_ = global_nh_.subscribe<std_msgs::Int64>(
             "demo_sub_pub_node/counts", 1,
             [this](const std_msgs::Int64::ConstPtr & msg)
             {
