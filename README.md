@@ -18,3 +18,4 @@ rospack plugins --attrib=plugin nodelet
 - Nodelet Example [link_github](https://github.com/lucasw/nodelet_demo)
 - Nodelet Multi-threading Example [link_github](https://github.com/ros-drivers/camera1394/blob/abc1950a6925628acc7581cabc312741706b6e4c/src/nodes/nodelet.cpp)
 - Packt Nodelet Explanation [link](https://hub.packtpub.com/working-pluginlib-nodelets-and-gazebo-plugins/)
+- Multiple Nodelet in Single Package [link](https://answers.ros.org/question/302004/multiple-nodelets-in-the-same-package/)
